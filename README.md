@@ -5,6 +5,6 @@ ToDo:
 
 Users support
 
-Symbols support
+Stock Symbols support
 
 History on DB
