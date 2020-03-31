@@ -37,7 +37,7 @@ def calculate():
             balanceAfter=balanceAfter
         )
 if __name__=="__main__":
-    app.run()
+    app.run(host="0.0.0.0", port=80)
 
 # Comment out below lines to run locally
 # if __name__=="__main__":
