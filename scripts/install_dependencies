@@ -1,6 +1,6 @@
 #!/bin/bash
-easy_install pip
-pip install virtualenv
+curl -O https://bootstrap.pypa.io/get-pip.py
+sudo python3.2 get-pip.py
 cd /home/ec2-user/tradefeeapp
 virtualenv environment
 source environment/bin/activate
