@@ -3,8 +3,6 @@ os: linux
 files:
   - source: /scripts
     destination: /home/ec2-user/tradefeeapp
-  - source: requirements.txt
-    destination: /home/ec2-user/tradefeeapp
   - source: /
     destination: /home/ec2-user/tradefeeapp    
 permissions:
