@@ -1,8 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /scripts
     destination: /home/ec2-user/tradefeeapp
+  - source: requirements.txt
+    destination: /home/ec2-user/tradefeeapp
+  - source: /
+    destination: /home/ec2-user/tradefeeapp    
 permissions:
   - object: /home/ec2-user/tradefeeapp/app.py
     owner: ec2-user
@@ -14,6 +18,11 @@ permissions:
     mode: 644
     type:
       - file
+  - object: /home/ec2-user/tradefeeapp/supervisor.conf
+    owner: ec2-user
+    mode: 644
+    type:
+      - file      
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
